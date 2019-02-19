@@ -1,0 +1,196 @@
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+
+header {
+    display: flex;
+    width: 100%;
+    min-width: $min-width;
+    text-align: left;
+    order: 1;
+    -webkit-order: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    min-height: 550px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+.header-content {
+    display: flex;
+    margin-top: 40px;
+    &__logo {
+        flex-grow: 1;
+    }
+}
+
+nav {
+    flex-grow: 5;
+    align-self: center;
+    ul {
+        display: flex;
+        list-style: none;
+        li {
+            flex-grow: .1;
+            font-family: "Basis Grotesque Pro";
+            a {
+                color: #fff;
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.header-top {
+    width: 100%;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    height: 66%;
+    h1 {
+        position: relative;
+        color: #ffffff;
+        font-family: "Basis Grotesque Pro";
+        font-size: 40px;
+        font-weight: 600;
+        max-width: 676px;
+        padding-left: 45px;
+        padding-top: 30px;
+        &::before {
+            content: '';
+            top: 0;
+            z-index: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            background: url(../img/top_lines.png) no-repeat;
+        }
+    }
+}
+
+.down {
+    position: absolute;
+    bottom: 38px;
+    right: 38px;
+    span {
+        cursor: pointer;
+    }
+}
+
+//mobil
+.menu {
+    .navbar-toggle {
+        position: fixed;
+        @media (max-width: 760px) {
+            right: 13px;
+        }
+        top: 31px;
+        right: 30px;
+        width: 45px;
+        height: 45px;
+        z-index: 11;
+        cursor: pointer;
+        display: block;
+    }
+    .bar {
+        transition: all 0.3s ease-in-out;
+        .hamburger {
+            position: relative;
+            z-index: 12;
+            outline: none;
+            padding: 0;
+            border: none;
+            background: transparent;
+            svg {
+                fill: white;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        display: none;
+    }
+    .navmobile {
+        nav {
+            display: none;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 25px;
+            position: fixed;
+            z-index: 10;
+            background: rgba(0, 0, 0, .9);
+            width: 100vw;
+            height: 100vh;
+            color: #222;
+            text-align: center;
+            top: 0;
+            left: 0;
+            margin: 0;
+        }
+        &__vertical {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            ul {
+                align-self: center;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                flex-wrap: wrap;
+                li {
+                    padding-top: 20px;
+                    width: 100%;
+                }
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+.more-splash {
+    display: block !important;
+}
+
+.overflow {
+    overflow: hidden !important;
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {
+    header {
+        background-position: left;
+    }
+    .header-content {
+        nav {
+            display: none;
+        }
+    }
+}

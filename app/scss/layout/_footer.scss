@@ -1,0 +1,84 @@
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+
+footer {
+    text-align: left;
+    width: 100%;
+    min-width: $min-width;
+    order: 3;
+    background-color: #fff;
+    -webkit-order: 3;
+}
+
+.footer-content {
+    margin-top: 60px;
+    &__logo {
+        display: flex;
+        align-items: center;
+        p {
+            color: #0a0a0b;
+            margin-left: 49px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    &__main {
+        display: flex;
+        margin-left: 80px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 90px;
+        padding-top: 25px;
+    }
+    &__item {
+        flex-grow: .2;
+        p {
+            color: #0a0a0b;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        ul {
+            list-style: none;
+            li {
+                color: #818181;
+                line-height: 35px;
+                font-size: 16px;
+            }
+        }
+    }
+    &__bottom {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #0a0a0b;
+        font-family: "Basis Grotesque Pro";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 35px;
+        text-align: right;
+    }
+    &__soc {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 15%;
+        display: flex;
+        a {
+            display: inline-block;
+            flex-grow: .5;
+            i {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {}
