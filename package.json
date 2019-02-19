@@ -1,7 +1,7 @@
 {
   "name": "test",
   "main": "gulpfile.js",
-  "author": "SlicePlanet",
+  "author": "Roman",
   "license": "UNLICENSED",
   "devDependencies": {
     "browser-sync": "^2.11.1",
